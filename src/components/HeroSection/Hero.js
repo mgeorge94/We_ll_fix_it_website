@@ -11,7 +11,6 @@ const Hero = () => {
    </HeroBg>
    <HeroContent>
     <HeroImg src={Logo}></HeroImg>
-
     <HeroCatchPhrase>Ridicăm | Reparăm | Returnăm</HeroCatchPhrase>
    </HeroContent>
   </HeroContainer>

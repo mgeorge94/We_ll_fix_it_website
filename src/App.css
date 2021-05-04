@@ -1,14 +1,11 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Encode Sans Expanded', sans-serif;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 html {
-  --light-accent-color: #1391f2;
-  --dark-accent-color: #0a3b61;
-}
-body {
-  background: #000;
+ --light-accent-color: #1391f2;
+ --dark-accent-color: #0a3b61;
 }

@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.section`
- background: black;
+ background: #000000;
  display: flex;
  justify-content: center;
  align-items: center;
  padding: 0 30px;
  height: 800px;
  position: relative;
+
  z-index: 1;
 `;
 export const HeroBg = styled.div`
@@ -26,7 +27,7 @@ export const VideoBg = styled.video`
  -o-object-fit: cover;
  object-fit: cover;
 
- background-color: #232a34;
+ background-color: black;
 `;
 export const HeroContent = styled.div`
  width: 80%;
