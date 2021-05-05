@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, ButtonR } from '../ButtonElements';
+
+import Ratings from './Reviews/Reviews';
 import {
  InfoContainer,
  InfoWrapper,
@@ -29,6 +31,7 @@ const InfoSection = ({
  to,
  dark,
  dark2,
+ reviews,
 }) => {
  return (
   <>
@@ -39,14 +42,21 @@ const InfoSection = ({
        <TextWraper>
         <TopLine>{topLine}</TopLine>
         <Heading lightText={lightText}>{headline}</Heading>
-        {description.map((paragraph) => {
-         return <Subtitle darkText={darkText}>{paragraph}</Subtitle>;
-        })}
+        {/* check if description is normal  or review/ faq */}
+
+        {id === 'reviews' ? (
+         <Ratings reviews={reviews} />
+        ) : (
+         description.map((paragraph) => {
+          return <Subtitle darkText={darkText}>{paragraph}</Subtitle>;
+         })
+        )}
         <BtnWrap>
          {to.includes('http') ? (
           //  go to external link
           <ButtonR
            href={to}
+           target='_blank'
            smooth={true}
            duration={500}
            spy={true}

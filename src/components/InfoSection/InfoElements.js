@@ -64,7 +64,14 @@ export const Subtitle = styled.p`
  font-size: 16px;
  font-weight: 400;
  line-height: 24px;
+
  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+ &.reviewText {
+  max-width: 550px;
+  @media screen and (max-width: 760px) {
+   font-size: 0.8rem;
+  }
+ }
 `;
 export const BtnWrap = styled.div`
  display: flex;
@@ -79,4 +86,12 @@ export const Img = styled.img`
  width: 100%;
  margin: 0 0 10px 0;
  padding-right: 0;
+ @media screen and (max-width: 760px) {
+  margin-top: -4rem;
+  max-width: 380px;
+ }
+ @media screen and (max-width: 500px) {
+  margin-top: 0rem;
+  max-width: 100%;
+ }
 `;
