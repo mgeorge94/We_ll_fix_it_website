@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../../ButtonElements';
 import { FaqWrapper, FaqCard, FaqQuestion, FaqAnswer } from './FaqElements';
-import faqData from './FaqData';
+// import faqData from './FaqData';
 import {
  InfoContainer,
  InfoWrapper,

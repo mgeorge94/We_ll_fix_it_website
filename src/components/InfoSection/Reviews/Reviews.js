@@ -30,8 +30,9 @@ const Ratings = ({ reviews, darkText }) => {
   const review = document.querySelector('.review');
   review.classList.remove('new');
   review.classList.add('old');
-
-  index >= reviews.length ? (index = 0) : (index = index);
+  if (index >= reviews.length) {
+   index = 0;
+  }
 
   setTimeout(() => {
    review.classList.remove('old');
