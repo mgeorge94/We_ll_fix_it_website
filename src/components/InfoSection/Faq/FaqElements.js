@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 export const FaqWrapper = styled.aside`
  width: 30vw;
- height: 35vw;
+ height: 28vw;
  position: relative;
-
  display: flex;
  align-items: center;
  flex-direction: column;
  justify-content: center;
- margin: auto;
+
  @media screen and (max-width: 1000px) {
   height: 40vw;
   width: 40vw;
@@ -16,6 +15,10 @@ export const FaqWrapper = styled.aside`
  @media screen and (max-width: 760px) {
   width: 80vw;
   height: 60vw;
+ }
+ @media screen and (max-width: 500px) {
+  width: 80vw;
+  height: 70vw;
  }
 `;
 export const FaqCard = styled.div`
@@ -45,19 +48,16 @@ export const FaqCard = styled.div`
   }
  }
 
- &.active .question {
+ &:hover .question {
   font-size: 1rem;
   transition: all 0.2s ease-in;
   color: var(--light-accent-color);
  }
- &.active .answer {
+ &:hover .answer {
   display: block;
   padding-top: 18px;
   margin-bottom: 18px;
   transition: all 0.2 ease;
-  @media screen and (max-width: 900px) {
-   /* font-size: 0.8rem; */
-  }
  }
 `;
 export const FaqQuestion = styled.h4`
@@ -69,6 +69,7 @@ export const FaqQuestion = styled.h4`
 export const FaqAnswer = styled.p`
  position: relative;
  color: black;
+
  display: none;
  transition: all 1 ease;
  cursor: default;

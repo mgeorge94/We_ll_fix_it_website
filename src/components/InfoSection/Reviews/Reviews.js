@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Subtitle } from '../InfoElements';
-import { ArrowLeft, ArrowRight, ReviewContainer, Quote, Author, Product, Stars } from './ReviewsElements';
-import { FaCaretLeft, FaCaretRight, FaQuoteRight } from 'react-icons/fa';
+import { ArrowRight, ReviewContainer, Quote, Author, Product, Stars } from './ReviewsElements';
+import { FaCaretRight, FaQuoteRight } from 'react-icons/fa';
 import BeautyStars from 'beauty-stars';
 
 const Ratings = ({ reviews, darkText }) => {
@@ -9,7 +9,7 @@ const Ratings = ({ reviews, darkText }) => {
  let [index, setIndex] = useState(1);
 
  // rating Star
- let [rating, setRating] = useState(3);
+ let [rating, setRating] = useState(reviews[0].rating);
  const paintRating = () => {
   setRating(reviews[index].rating);
  };
@@ -57,10 +57,10 @@ const Ratings = ({ reviews, darkText }) => {
      <Author>
       {name}
       <Stars>
-       <BeautyStars size='20' inactiveColor='var(--dark-accent-color)' value={rating} />
+       <BeautyStars size={20} inactiveColor='var(--dark-accent-color)' value={rating} />
       </Stars>
      </Author>
-     <Product>{product}</Product>
+     <Product>Produs: {product}</Product>
      {/* rating */}
      <Subtitle className='reviewText' darkText={darkText}>
       {review}

@@ -4,7 +4,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
- background: rgba(0, 0, 0, 0.6);
+ background: rgba(0, 0, 0, 1);
  height: 80px;
  margin-top: -80px;
  display: flex;
@@ -15,6 +15,7 @@ export const Nav = styled.nav`
  top: 0;
  z-index: 10;
  color: white;
+ padding: 10px;
 
  @media screen and (max-width: 960px) {
   transition: 0.8s all ease;
@@ -32,7 +33,7 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled.img`
  justify-self: flex-start;
  align-self: center;
- height: 80px;
+ height: 60px;
 `;
 export const MobileIcon = styled.div`
  display: none;

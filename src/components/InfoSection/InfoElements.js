@@ -69,7 +69,7 @@ export const Subtitle = styled.p`
  &.reviewText {
   max-width: 550px;
   @media screen and (max-width: 760px) {
-   font-size: 0.8rem;
+   font-size: 1rem;
   }
  }
 `;
