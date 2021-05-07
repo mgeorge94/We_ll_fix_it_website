@@ -1,3 +1,4 @@
+// the to key is where the button on page takes you, not the navBar button
 export const whoPage = {
  id: 'who-we-are',
  lightBg: true,

@@ -1,35 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavLinks, NavItem, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
-import Logo from '../../images/logo/logo-hero.png';
+import { animateScroll as scroll } from 'react-scroll';
+import { Nav, NavbarContainer, Logo, MobileIcon, NavLinks, NavItem, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+import LogoImg from '../../images/logo/logo-hero.png';
 const NavBar = ({ toggle }) => {
+ const [scrollNav, setScrollNav] = useState(false);
+ const changeNav = () => {
+  if (window.scrollY >= 700) {
+   setScrollNav(true);
+  } else {
+   setScrollNav(false);
+  }
+ };
+ useEffect(() => {
+  window.addEventListener('scroll', changeNav);
+ }, []);
+ // function to scroll to top
+ const scrollTop = () => {
+  scroll.scrollToTop();
+ };
  return (
   <>
-   <Nav>
+   <Nav scrollNav={scrollNav}>
     <NavbarContainer>
-     <NavLogo src={Logo} to='/' />
+     <Logo src={LogoImg} onClick={scrollTop} to='/' />
      <MobileIcon onClick={toggle}>
       <FaBars />
      </MobileIcon>
      <NavMenu>
       <NavItem>
-       <NavLinks to='who-we-are'> Cine suntem</NavLinks>
+       <NavLinks smooth={true} duration={500} spy={true} exact='true' offset={-80} to='who-we-are'>
+        Cine suntem
+       </NavLinks>
       </NavItem>
       <NavItem>
-       <NavLinks to='what-we-do'> Ce facem</NavLinks>
+       <NavLinks smooth={true} duration={500} spy={true} exact='true' offset={-80} to='what-we-do'>
+        Ce facem
+       </NavLinks>
+      </NavItem>
+
+      <NavItem>
+       <NavLinks smooth={true} duration={500} spy={true} exact='true' offset={-80} to='faq'>
+        Întrebări frecvente
+       </NavLinks>
       </NavItem>
       <NavItem>
-       <NavLinks to='reviews'> Recenzii</NavLinks>
+       <NavLinks smooth={true} duration={500} spy={true} exact='true' offset={-80} to='reviews'>
+        Recenzii
+       </NavLinks>
       </NavItem>
-      <NavItem>
-       <NavLinks to='faq'> Întrebări frecvente </NavLinks>
-      </NavItem>
-      {/* <NavItem>
-                            <NavLinks to="contact"> Contact </NavLinks>
-                            </NavItem> */}
      </NavMenu>
      <NavBtn>
-      <NavBtnLink to='contact'>Contact</NavBtnLink>
+      <NavBtnLink smooth={true} duration={500} spy={true} exact='true' offset={-90} to='contact'>
+       Contact
+      </NavBtnLink>
      </NavBtn>
     </NavbarContainer>
    </Nav>

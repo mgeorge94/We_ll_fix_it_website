@@ -8,6 +8,7 @@ import { whoPage, reviewPage, faqPage, contactPage } from '../components/InfoSec
 import { reviews } from '../components/InfoSection/Reviews/ReviewsData';
 import Services from '../components/Services/Services';
 import Faq from '../components/InfoSection/Faq/Faq';
+import Footer from '../components/Footer/Footer';
 
 const HomePage = () => {
  const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const HomePage = () => {
 
    <InfoSection reviews={reviews} {...reviewPage} />
    <InfoSection {...contactPage} />
+   <Footer />
   </>
  );
 };
