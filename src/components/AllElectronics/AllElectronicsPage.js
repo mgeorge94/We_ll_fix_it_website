@@ -31,7 +31,7 @@ const AllElectronics = () => {
     }
    }
   });
-  const reRender = setTimeout(() => {
+  setTimeout(() => {
    randomise(styles);
   }, 10000);
  };
