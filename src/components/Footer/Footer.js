@@ -1,9 +1,9 @@
 import React from 'react';
-import { Logo } from '../NavBar/NavbarElements';
+// import { Logo } from '../NavBar/NavbarElements';
 import { FooterContainer, LinkR } from './FooterElements';
-import { animateScroll as scroll } from 'react-scroll';
-import LogoImg from '../../images/logo/logo-hero.png';
-import AllElectronicsPage from '../AllElectronics/AllElectronicsPage';
+// import { animateScroll as scroll } from 'react-scroll';
+// import LogoImg from '../../images/logo/logo-hero.png';
+// import AllElectronicsPage from '../AllElectronics/AllElectronicsPage';
 
 const Footer = () => {
  return (

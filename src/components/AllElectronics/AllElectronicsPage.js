@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageElement, ImageElement, ListLeft, ListRight, ListTop, ListBottom } from './AllElectronicsElements';
+import { PageElement, ImageElement } from './AllElectronicsElements';
 import Image from '../../images/photos/all-electronics.svg';
 import { Electronice } from './ElectronicsData';
 const AllElectronics = () => {
