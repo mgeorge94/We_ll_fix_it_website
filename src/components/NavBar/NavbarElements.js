@@ -23,17 +23,22 @@ export const Nav = styled.nav`
 `;
 export const NavbarContainer = styled.div`
  display: flex;
+
  justify-content: space-between;
  height: 80px;
  z-index: 10;
  width: 100%;
  padding: 0 5rem;
- /* max-width: 1000px; */
 `;
 export const Logo = styled.img`
  justify-self: flex-start;
  align-self: center;
  height: 60px;
+ @media screen and (max-width: 500px) {
+  position: absolute;
+  height: 50px;
+  left: 1rem;
+ }
 `;
 export const MobileIcon = styled.div`
  display: none;

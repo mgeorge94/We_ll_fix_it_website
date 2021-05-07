@@ -40,4 +40,10 @@ export const ImageElement = styled.img`
  top: 50%;
  transform: translateX(-50%) translateY(-50%);
  position: absolute;
+ @media screen and (max-width: 750px) {
+  width: 85%;
+ }
+ @media screen and (max-width: 1000px) {
+  width: 40%;
+ } ;
 `;

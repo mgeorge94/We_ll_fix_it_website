@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PageElement, ImageElement } from './AllElectronicsElements';
 import Image from '../../images/photos/all-electronics.svg';
 import { Electronice } from './ElectronicsData';
@@ -13,13 +13,13 @@ const AllElectronics = () => {
  let trigger = false;
  (function randomise(styles) {
   // get dom elements
-  const words = document.querySelectorAll('.word');
-
+  const words = Array.from(document.querySelectorAll('.word'));
   const canvas = document.querySelector('.page-canvas');
 
   let index = 0;
   words.forEach((word) => {
    index++;
+
    word.style.top = (canvas.clientHeight - 100) * Math.random() + 'px';
    word.style.left = (canvas.clientWidth - 100) * Math.random() + 'px';
    word.style.fontSize = styles.fontSize[index];
@@ -29,6 +29,7 @@ const AllElectronics = () => {
     if (index > key.length) index = 0;
    }
   });
+
   if (trigger === false) {
    setTimeout(() => {
     randomise(styles);

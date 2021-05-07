@@ -7,7 +7,7 @@ export const whoPage = {
  topLine: 'Cine Suntem?',
  headline: 'Un grup de entuziaști ce îți sar în ajutor',
  description: [
-  'Avănd contracte cu unele dintre cele mai mari service-uri , atăt din Cluj cât și din Romania, echipa noatră garantează calitatea serviciilor oferite.',
+  'Având contracte cu unele dintre cele mai mari service-uri , atât din Cluj cât și din Romania, echipa noatră garantează calitatea serviciilor oferite.',
  ],
  buttonLabel: 'Vezi ce facem',
  to: 'what-we-do',
@@ -66,7 +66,7 @@ export const contactPage = {
   'Luni-Sâmbătă: 09:00 -18:00',
   'Duminică: Indisponibil',
   'Tel: 0751 806 105',
-  'Email:wellfixitcluj@yahoo.com',
+  'Email: wellfixitcluj@yahoo.com',
  ],
  buttonLabel: 'Caută-ne pe Facebook',
  to: 'http://fb.me/wellfixitcluj',

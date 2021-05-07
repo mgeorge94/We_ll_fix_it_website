@@ -1,8 +1,9 @@
 export const Electronice = [
  'Calculator',
  'Laptop',
- 'Tabletă',
  'Telefon',
+ 'Tabletă',
+
  'Smart TV',
  'Lampă',
 
