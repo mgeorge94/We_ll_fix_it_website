@@ -19,20 +19,17 @@ const Services = () => {
     <ServicesCard>
      <ServicesIcon src={Icon1} />
      <ServicesH2>Ridicam</ServicesH2>
-     <ServicesP>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, praesentium</ServicesP>
+     <ServicesP>Din comfortul casei tale ne contactezi, iar noi venim să ridicăm echipamentul stricat cât ai clipi.</ServicesP>
     </ServicesCard>
     <ServicesCard>
      <ServicesIcon src={Icon2} />
      <ServicesH2>Reparam</ServicesH2>
-     <ServicesP>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, praesentium molestiae</ServicesP>
+     <ServicesP>Ducem aparatura ta la service-urile cu care colaborăm, pentru ai reda gloria de altădată.</ServicesP>
     </ServicesCard>
     <ServicesCard>
      <ServicesIcon src={Icon3} />
      <ServicesH2>Returnam</ServicesH2>
-     <ServicesP>
-      Lquatur eligendi quasi vel temporibus incidunt dolore, maiores minima eveniet, accusantium quis! Suscipit mollitia tempora
-      laborum debitis dolores laudantium.
-     </ServicesP>
+     <ServicesP>Aducem aparatura înapoi la tine reparat, într-un timp foarte scurt, totul la un preț competitiv.</ServicesP>
     </ServicesCard>
    </ServicesWrapper>
   </ServicesContainer>

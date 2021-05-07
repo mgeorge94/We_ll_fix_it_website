@@ -21,9 +21,9 @@ export const reviews = [
  },
  {
   author: 'Sebastian Pascu',
-  rating: 4,
+  rating: 5,
   product: 'Telefon',
   review:
-   "'55555555555m Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged5555555555555555555'",
+   "Un Samsung Galaxy s7 edge a fost readus la viață prin intermediul echipei We'll fix it. Aceștia  au dat dovadă de profesionalism și dedicare, iar munca depusă are un raport calitate preț competitiv. Bravo! ",
  },
 ];

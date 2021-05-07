@@ -9,7 +9,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
  display: grid;
  z-index: 1;
- height: 860px;
+ min-height: 860px;
  max-width: 1100px;
  margin-right: auto;
  margin-left: auto;
@@ -27,11 +27,12 @@ export const InfoRow = styled.div`
 `;
 export const Column1 = styled.div`
  margin-bottom: 15px;
+
  padding: 0 15px;
  grid-area: col1;
 `;
 export const Column2 = styled.div`
- margin-botom: 15px;
+ margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col2;
 `;
@@ -48,6 +49,7 @@ export const TopLine = styled.p`
  letter-spacing: 1.4px;
  text-transform: uppercase;
  margin-bottom: 16px;
+ margin-top: 10rem;
 `;
 export const Heading = styled.h1`
  margin-bottom: 24px;
@@ -77,21 +79,15 @@ export const BtnWrap = styled.div`
  display: flex;
  justify-content: flex-start;
  margin-top: 40px;
+ animation: all 0.2s ease-in-out;
 `;
 export const ImgWrap = styled.div`
  max-width: 555px;
  height: 100%;
+ animation: all 0.2s ease-in-out;
 `;
 export const Img = styled.img`
  width: 100%;
  margin: 0 0 10px 0;
  padding-right: 0;
- @media screen and (max-width: 760px) {
-  margin-top: -4rem;
-  max-width: 380px;
- }
- @media screen and (max-width: 500px) {
-  margin-top: 0rem;
-  max-width: 100%;
- }
 `;

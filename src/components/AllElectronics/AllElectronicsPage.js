@@ -5,40 +5,45 @@ import { Electronice } from './ElectronicsData';
 const AllElectronics = () => {
  //arrays of css styles
  const styles = {
-  padding: ['0.5rem', '1rem', '1.5rem'],
-  fontSize: ['2rem', '0.8rem', '1rem', '1.2rem', '1.4rem', '1.6rem'],
+  fontSize: ['2rem', '1rem', '1.2rem', '1.4rem', '1.6rem'],
   fontFamily: ['Sonsie One', 'Caveat', 'Fira Mono', 'Goblin One', 'Oswald', 'Pathway Gothic One'],
  };
- let trigger = false;
+
  //randomise
- const randomise = (styles) => {
+ let trigger = false;
+ (function randomise(styles) {
   // get dom elements
   const words = document.querySelectorAll('.word');
-  const canvas = document.querySelector('.page-canvas');
-  console.log(canvas);
 
+  const canvas = document.querySelector('.page-canvas');
+
+  let index = 0;
   words.forEach((word) => {
+   index++;
+   word.style.top = (canvas.clientHeight - 100) * Math.random() + 'px';
+   word.style.left = (canvas.clientWidth - 100) * Math.random() + 'px';
+   word.style.fontSize = styles.fontSize[index];
+
+   word.style.fontFamily = styles.fontFamily[index];
    for (let key in styles) {
-    let index = Math.floor(Math.random() * key.length);
-    console.log(key);
-    word.style.top = (canvas.clientHeight - 100) * Math.random() + 'px';
-    word.style.left = (canvas.clientWidth - 100) * Math.random() + 'px';
-    word.style.padding = styles.padding[index];
-    word.style.fontSize = styles.fontSize[index];
-    if (trigger === false) {
-     word.style.fontFamily = styles.fontFamily[index];
-     trigger = true;
-    }
+    if (index > key.length) index = 0;
    }
   });
-  setTimeout(() => {
-   randomise(styles);
-  }, 10000);
- };
+  if (trigger === false) {
+   setTimeout(() => {
+    randomise(styles);
+   }, 0);
+   trigger = true;
+  } else {
+   setTimeout(() => {
+    randomise(styles);
+   }, 10000);
+  }
+ })(styles);
 
  return (
   <PageElement className='page-canvas'>
-   <ImageElement onclick={randomise(styles)} src={Image}></ImageElement>
+   <ImageElement src={Image}></ImageElement>
 
    <ul>
     {Electronice.map((element) => {

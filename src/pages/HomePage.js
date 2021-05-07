@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import Sidebar from '../components/Sidebar/Sidebar';
 import NavBar from '../components/NavBar/NavBar';
 import HeroSection from '../components/HeroSection/Hero';
@@ -23,7 +24,6 @@ const HomePage = () => {
    <InfoSection {...whoPage} />
    <Services />
    <Faq {...faqPage} faqData={faqData} />
-   {/* <InfoSection  /> */}
 
    <InfoSection reviews={reviews} {...reviewPage} />
    <InfoSection {...contactPage} />

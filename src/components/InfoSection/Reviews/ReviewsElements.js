@@ -39,9 +39,11 @@ export const ReviewContainer = styled.div`
  display: flex;
  justify-content: center;
  align-items: center;
- overflow: hidden;
+
  position: relative;
- /* padding: 2rem; */
+ padding-top: 2rem;
+ margin: 3rem 0;
+
  transform: rotateX(0);
  width: 600px;
  @media screen and (max-width: 1200px) {
@@ -52,6 +54,7 @@ export const ReviewContainer = styled.div`
  }
  @media screen and (max-width: 750px) {
   width: 90vw;
+  margin: 5rem 0;
  }
 
  &.old {

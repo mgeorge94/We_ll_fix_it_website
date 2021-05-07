@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight } from './InfoElements';
+import { ArrowLeft, ArrowRight } from '../InfoElements';
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
-import Subtitle from './InfoSection';
+import Subtitle from '../InfoSection';
 const ReviewContainer = (reviews, darkText) => {
  let [index, setIndex] = useState(0);
  let [review, setReview] = useState('some state');

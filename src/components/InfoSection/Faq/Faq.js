@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from '../../ButtonElements';
 import { FaqWrapper, FaqCard, FaqQuestion, FaqAnswer } from './FaqElements';
-// import faqData from './FaqData';
+import { Link as LinkR } from 'react-router-dom';
+
 import {
  InfoContainer,
  InfoWrapper,
@@ -23,8 +24,7 @@ const Faq = ({
  topLine,
  lightText,
  headline,
- darkText,
- description,
+
  buttonLabel,
  img,
  alt,
@@ -34,6 +34,7 @@ const Faq = ({
  faqData,
 }) => {
  // populate faq
+ //create jsx
 
  return (
   <>
@@ -48,8 +49,20 @@ const Faq = ({
          {faqData.map((element) => {
           return (
            <FaqCard className=' faqCard'>
-            <FaqQuestion className='question'>{element.question}</FaqQuestion>
-            <FaqAnswer className='answer'>{element.answer}</FaqAnswer>
+            <FaqQuestion key={element.alt} className='question'>
+             {element.question}
+             {element.answer.includes('Tesla') ? (
+              <FaqAnswer className='answer'>
+               {element.answer}
+               <LinkR to='/AllElectronicsPage'>
+                <p className='all-electronics'>aici</p>
+               </LinkR>
+               .
+              </FaqAnswer>
+             ) : (
+              <FaqAnswer className='answer'>{element.answer}</FaqAnswer>
+             )}
+            </FaqQuestion>
            </FaqCard>
           );
          })}

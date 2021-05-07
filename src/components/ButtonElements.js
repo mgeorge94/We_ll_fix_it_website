@@ -5,6 +5,7 @@ export const Button = styled(Link)`
  border-radius: 50px;
  background: var(--light-accent-color);
  white-space: nowrap;
+ /* position: relative; */
  padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
  color: ${({ dark }) => (dark ? '#010606' : '#fff')};
  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
@@ -14,6 +15,7 @@ export const Button = styled(Link)`
  justify-content: center;
  align-items: center;
  transition: all 0.2s ease-in-out;
+
  &:hover {
   transition: all 0.2s ease-in-out;
   filter: brightness(130%);
