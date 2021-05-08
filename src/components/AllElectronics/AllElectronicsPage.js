@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { PageElement, ImageElement } from './AllElectronicsElements';
 import Image from '../../images/photos/all-electronics.svg';
 import { Electronice } from './ElectronicsData';
