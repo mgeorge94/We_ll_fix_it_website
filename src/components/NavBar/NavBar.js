@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import { Nav, NavbarContainer, Logo, MobileIcon, NavLinks, NavItem, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
-import LogoImg from '../../images/logo/logo-hero.png';
+import LogoImg from '../../images/logo/logo.png';
 const NavBar = ({ toggle }) => {
  const [scrollNav, setScrollNav] = useState(false);
  const changeNav = () => {
@@ -49,9 +49,14 @@ const NavBar = ({ toggle }) => {
         Recenzii
        </NavLinks>
       </NavItem>
+      <NavItem>
+       <NavLinks smooth={true} duration={500} spy={true} exact='true' offset={-80} to='whyUs'>
+        Nu te-ai convins?
+       </NavLinks>
+      </NavItem>
      </NavMenu>
      <NavBtn>
-      <NavBtnLink smooth={true} duration={500} spy={true} exact='true' offset={-90} to='contact'>
+      <NavBtnLink smooth={true} duration={500} spy={true} exact='true' offset={-80} to='contact'>
        Contact
       </NavBtnLink>
      </NavBtn>

@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar/NavBar';
 import HeroSection from '../components/HeroSection/Hero';
 import InfoSection from '../components/InfoSection/InfoSection';
 import faqData from '../components/InfoSection/Faq/FaqData';
-import { whoPage, reviewPage, faqPage, contactPage } from '../components/InfoSection/data';
+import { whoPage, reviewPage, faqPage, contactPage, whyUsPage } from '../components/InfoSection/data';
 import { reviews } from '../components/InfoSection/Reviews/ReviewsData';
 import Services from '../components/Services/Services';
 import Faq from '../components/InfoSection/Faq/Faq';
@@ -26,6 +26,8 @@ const HomePage = () => {
    <Faq {...faqPage} faqData={faqData} />
 
    <InfoSection reviews={reviews} {...reviewPage} />
+
+   <InfoSection {...whyUsPage} />
    <InfoSection {...contactPage} />
    <Footer />
   </>

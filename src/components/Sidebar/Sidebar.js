@@ -25,7 +25,10 @@ const Sidebar = ({ isOpen, toggle }) => {
      {' '}
      Întrebări frecvente{' '}
     </SidebarLinks>
-
+    <SidebarLinks to='whyUs' onClick={toggle}>
+     {' '}
+     Nu te-ai convins?{' '}
+    </SidebarLinks>
     <SidebarLinks to='contact' onClick={toggle}>
      {' '}
      Contact{' '}
