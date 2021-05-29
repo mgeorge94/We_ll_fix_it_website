@@ -1,12 +1,15 @@
 const faqData = [
  {
   question: 'Mi s-a defectat unul dintre aparatele electrocasnice. Cum procedez?',
-  answer: `Ne contactezi de  la tine de pe canapea , iar noi venim la ușa ta, scutindu-te de căutarea unui service adecvat nevoilor tale, timpul pe drum, combustibilul irosit și al reparațiilor supraevaluate.`,
+  answer: `Ne contactezi prin apel telefonic, mesaj sau rezervare pe `,
   id: '1',
+  link: 'https://www.fb.me/wellfixitcluj',
+  span: 'pagina de Facebook ',
+  continue: ' iar noi revenim la tine in cel mai scurt timp.',
  },
  {
   question: 'Ce aparate defecte reparati?',
-  answer: `Reparăm orice aparat electrocasnic defect, de la uscătoare de păr până la Tesla by Elon Musk. Vezi lista completă `,
+  answer: `Reparăm orice aparat electronic defect, de la laptop, cuptoare cu microunde, drone pana la Tesla by Elon Musk. Vezi lista completă `,
   id: '2',
  },
  {

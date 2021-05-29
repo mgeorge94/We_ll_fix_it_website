@@ -6,7 +6,8 @@
 }
 
 html {
- --light-accent-color: #1391f2;
+ --light-accent-color: #00b5e6;
+ /* --light-accent-color: #1391f2; */
  --dark-accent-color: #0a3b61;
  cursor: default;
 }

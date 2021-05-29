@@ -51,7 +51,15 @@ const Faq = ({
            <FaqCard className=' faqCard'>
             <FaqQuestion key={element.alt} className='question'>
              {element.question}
-             {element.answer.includes('Tesla') ? (
+             {element.link !== undefined ? (
+              <FaqAnswer className='answer'>
+               {element.answer}
+               <a href={element.link} rel='noreferrer' target='_blank'>
+                <p className='all-electronics'>{element.span}</p>
+               </a>
+               <span>{element.continue}</span>
+              </FaqAnswer>
+             ) : element.answer.includes('Tesla') ? (
               <FaqAnswer className='answer'>
                {element.answer}
                <LinkR to='/AllElectronicsPage'>
